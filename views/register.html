@@ -18,6 +18,70 @@
 	<br>
 	<div class="container">
 		<form action="home.html">
+			<div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="userName" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="userEmail" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="userPassword1" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+              <label for="password">Confirm Password</label>
+              <input type="password" class="form-control" id="userPassword2" placeholder="Comfirm Password">
+            </div>
+            <p>CU Boulder Alumni?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="alumRadios" id="alumyes" value="option1">
+              <label class="form-check-label" for="alumRadios1">Yes</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="alumRadios" id="alumNo" value="option2">
+              <label class="form-check-label" for="alumRadios2">No</label>
+            </div>
+            <br>
+            <p>CU Boulder student?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="studentRadios" id="studentYes" value="option1">
+              <label class="form-check-label" for="studentRadios1">Yes</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="studentRadios" id="studentNo" value="option2">
+              <label class="form-check-label" for="studentRadios2">No</label>
+            </div>
+            <br>
+            <p>Student Status?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="studentStatusRadios" id="radioUndergrad" value="option1">
+              <label class="form-check-label" for="ugRadio">Undergrad</label>
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="undergrad">
+              	<option value="" disabled selected>Select Student Status</option>
+                <option>Freshman</option>
+                <option>Sophomore</option>
+                <option>Junior</option>
+                <option>Senior</option>
+              </select>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="studentStatusRadios" id="radioGrad" value="option2">
+              <label class="form-check-label" for="gRadio">Graduate</label>
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="graduate">
+              	<option value="" disabled selected>Select Student Status</option>
+                <option>MA</option>
+                <option>PhD</option>
+                <option>MBA</option>
+              </select>
+            </div>
+            
 			<!--
 				Todo: Create a form with the following fields:
 					1. Name Text Field
@@ -33,7 +97,7 @@
 					11. Submit Button (links to home page)
 
 			-->
-			<input type="submit" value="submit" class="btn btn-primary btn-block">
+			<input type="submit" value="submit" class="btn btn-primary btn-block" href="">
 		</form>
 	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
